@@ -266,6 +266,44 @@ button.bg-green:focus {
     background-color: #5ac832;
 }
 
+.apple-xl {
+    display: none;
+}
+
+.apple-sm {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .apple-xl {
+        display: block;
+    }
+
+    .apple-sm {
+        display: none;
+    }
+}
+
+.android-xl {
+    display: none;
+}
+
+.android-sm {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .android-xl {
+        display: block;
+    }
+
+    .android-sm {
+        display: none;
+    }
+}
+
+
+
 .fb {
     display: none;
 }
