@@ -138,8 +138,8 @@ button.bg-green:focus {
 
 @media (min-width: 768px) {
     .head {
-        padding-top: 30px;
-        padding-bottom: 30px; 
+        padding-top: 60px;
+        padding-bottom: 60px; 
     }
 }
 
