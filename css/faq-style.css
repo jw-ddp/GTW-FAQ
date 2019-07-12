@@ -197,14 +197,16 @@ button.bg-green:focus {
     transition: all 0.2s ease-in-out;
 }
 
-#accordion .question:hover {
-    color: #fff;
-    background-color: #5ac832;
-}
+
 
 #accordion .question.collapsed {
     color: #000;
     background-color: #fff;
+}
+
+#accordion .question.collapsed:hover {
+    color: #fff;
+    background-color: #5ac832;
 }
 
 #accordion .question.collapsed::after {
