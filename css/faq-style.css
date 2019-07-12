@@ -55,13 +55,13 @@ a:focus {
 }
 
 .bg-green {
-  background-color: #5ac832 !important;
+    background-color: #5ac832 !important;
 }
 
 a.bg-green:hover, a.bg-green:focus,
 button.bg-green:hover,
 button.bg-green:focus {
-  background-color: #5ac832 !important;
+    background-color: #5ac832 !important;
 }
 
 .text-green {
@@ -145,21 +145,22 @@ button.bg-green:focus {
 
 
 #accordion {
-  position: relative;
-  background-color: #fff;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 #accordion .question {
     position: relative;
     width: 100%;
-    padding: 15px 30px;
+    padding: 15px 45px 15px 30px;
     background-color: #5ac832;
     color: #fff;
     font-size: 16px;
     text-align: left;
     letter-spacing: 1px;
-    border-bottom: 1px solid #30bb64;
+    overflow: hidden;
     display: block;
     border: 0;   
     cursor: pointer;
@@ -176,19 +177,8 @@ button.bg-green:focus {
     left: 0;
     width: 10px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #4ba629;
 }
-
-/* 底線 
-#accordion button::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
-}*/
 
 /* 箭頭 */
 #accordion .question::after {
@@ -234,13 +224,13 @@ button.bg-green:focus {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.);
 }
 
 
 #accordion .ans-content {
     padding: 15px 30px;
-    background-color: #fff;
+    background-color: #f8f8f8;
 }
 
 @media (min-width: 768px) {
@@ -257,7 +247,7 @@ button.bg-green:focus {
 }
 
 #accordion .ans-content p {
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
