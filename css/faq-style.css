@@ -271,7 +271,7 @@ button.bg-green:focus {
 }
 
 .apple-sm {
-    display: block;
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -289,7 +289,7 @@ button.bg-green:focus {
 }
 
 .android-sm {
-    display: block;
+    display: none;
 }
 
 @media (min-width: 768px) {

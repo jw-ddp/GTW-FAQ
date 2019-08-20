@@ -9,6 +9,45 @@ $(function() {
             $('#BackTop').stop().fadeOut(222);
         }
     }).scroll();
+
+    // chingchen 新增
+    $(window).on("hashchange",function(){
+        var _hash=location.hash;
+        if(_hash){
+            var _faq=$(_hash).find('.question').attr("data-target");
+            $(_faq).collapse('show');
+            $(_faq).on('shown.bs.collapse', function () {
+                $("html,body").animate({
+                    scrollTop:$(_hash).offset().top+1
+                },600)
+            })
+        }
+    })
+    $(window).on("load",function(){
+        var _hash=location.hash;
+        if(_hash){
+            $('html,body').animate({
+                scrollTop:$(_hash).offset().top
+            },600,function(){
+                var _faq=$(_hash).find('.question').attr("data-target");
+                $(_faq).collapse('show')
+                $(_faq).on('shown.bs.collapse', function () {
+                    $("html,body").animate({
+                        scrollTop:$(_hash).offset().top+1
+                    },600)
+                })
+            })
+        }
+    })
+    $(".question").on('click',function(){
+        var _faq=$(this).attr("data-target")
+        $(_faq).on('shown.bs.collapse', function () {
+            var _top=$(this).closest('li').offset().top+1;
+            $("html,body").animate({
+                scrollTop:_top
+            },600)
+        })
+    })
 });
 
 (function($) { 
